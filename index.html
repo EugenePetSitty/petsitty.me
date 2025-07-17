@@ -8,6 +8,11 @@
   <meta name="description" content="Сервис по поиску заботы о питомцах: передержка, груминг и выгул для собак, кошек и других домашних животных. PetSitty – ваш помощник в уходе.">
   <meta name="robots" content="index, follow">
   <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
     body {
       font-family: sans-serif;
       background: #ffffff;
@@ -17,12 +22,10 @@
     }
     .container {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       align-items: center;
-      justify-content: center;
-      flex-wrap: wrap;
-      min-height: 100vh;
-      padding: 40px 20px;
+      justify-content: flex-start; 
+      padding: 1rem;            
     }
     .image-block {
       max-width: 400px;
@@ -49,6 +52,11 @@
       padding-top: 10px;
       border-top: 1px solid #ccc;
     }
+    @media (max-width: 600px) {
+    .container {
+      padding: 0.5rem;        
+  }
+}
   </style>
 </head>
 <body>
