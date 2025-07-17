@@ -3,16 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>PetSitty - Твой питомец в заботливых руках</title>
   <link rel="icon" href="favicon.png" type="image/png">
-  <meta name="description" content="Сервис по поиску заботы о питомцах: передержка, груминг и выгул для собак, кошек и других домашних животных. PetSitty – ваш помощник в уходе.">
+  <title>PetSitty - Твой питомец в заботливых руках</title>
+  <meta name="description" content="Servis za pronalaženje nege za kućne ljubimce u Srbiji: čuvanje, grooming i šetanje pasa, mačaka i drugih ljubimaca. PetSitty – vaš pomoćnik u brizi.">
   <meta name="robots" content="index, follow">
   <style>
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
     body {
       font-family: sans-serif;
       background: #ffffff;
@@ -21,19 +16,17 @@
       padding: 0;
     }
     .container {
-      padding-top: 100px;
-      max-width: 800px;
-      margin: 0 auto;
-    }
-    .content {
       display: flex;
+      flex-direction: row;
       align-items: center;
-      gap: 2rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      min-height: 100vh;
+      padding: 40px 20px;
     }
     .image-block {
       max-width: 400px;
       margin: 20px;
-      flex-shrink: 0;
     }
     .image-block img {
       max-width: 100%;
@@ -56,17 +49,10 @@
       padding-top: 10px;
       border-top: 1px solid #ccc;
     }
-    @media (max-width: 600px) {
-    .content {
-      flex-direction: column;
-      text-align: center;
-  }
-}
   </style>
 </head>
 <body>
   <div class="container">
-  <div class="content">
     <div class="image-block">
       <img src="waiting_pet.png" alt="Ожидающий питомец">
     </div>
@@ -85,6 +71,5 @@
       </div>
     </div>
   </div>
-</div>
 </body>
 </html>
