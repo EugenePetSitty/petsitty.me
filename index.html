@@ -13,7 +13,7 @@
     gtag('config', 'G-D1S9GXDD05');
   </script>
 
-  <!-- Авто-редирект на язык пользователя -->
+  <!-- Авто-редирект -->
   <meta http-equiv="refresh" content="0; url=/sr/">
   <script>
     const userLang = (navigator.language || navigator.userLanguage).slice(0,2);
@@ -24,16 +24,36 @@
   </script>
 
   <title>Sitty.Pet – Выбор языка</title>
+
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; font-family:"Segoe UI", sans-serif; }
+    body { 
+      background: linear-gradient(to right, #fefefe, #e0f7fa);
+      display:flex; flex-direction:column; align-items:center; justify-content:center; 
+      height:100vh; text-align:center; color:#333; padding:20px;
+    }
+    .logo { font-size:2.5rem; font-weight:bold; color:#2196f3; margin-bottom:1rem; }
+    .text { max-width:600px; margin-bottom:2rem; }
+    .pet-img { max-width:300px; width:100%; height:auto; }
+    .flags { display:flex; gap:10px; justify-content:center; margin-top:20px; }
+    .flags img { width:30px; height:20px; cursor:pointer; transition:transform 0.2s; }
+    .flags img:hover { transform:scale(1.2); }
+  </style>
 </head>
 <body>
+  <div class="logo">Sitty.Pet</div>
+  <div class="text">
+    <p>Перенаправление на вашу языковую версию сайта...</p>
+  </div>
+  <img src="waiting_pet.png" alt="Ожидающий питомец" class="pet-img">
+
   <noscript>
-    <p>Пожалуйста, включите JavaScript, чтобы автоматически перейти на вашу языковую версию сайта.</p>
-    <div style="display:flex; gap:10px; align-items:center; justify-content:center; margin-top:10px;">
+    <p>Пожалуйста, включите JavaScript, чтобы автоматически перейти на ваш язык.</p>
+    <div class="flags">
       <a href="/sr/"><img src="https://flagcdn.com/w40/rs.png" alt="Srpski"></a>
       <a href="/ru/"><img src="https://flagcdn.com/w40/ru.png" alt="Русский"></a>
       <a href="/en/"><img src="https://flagcdn.com/w40/gb.png" alt="English"></a>
     </div>
   </noscript>
-  <p>Перенаправление на ваш язык...</p>
 </body>
 </html>
