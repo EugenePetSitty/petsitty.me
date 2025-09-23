@@ -3,20 +3,64 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-D1S9GXDD05"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-D1S9GXDD05');
+  </script>
+
   <title>Sitty.Pet – Siting, šetnja pasa i nega kućnih ljubimaca u Srbiji</title>
-  <meta name="description" content="Sitty.Pet nudi siting, šetnju pasa, gruming i profesionalnu negu kućnih ljubimaca u Srbiji. Sajt uskoro otvaramo!">
+  <meta name="description" content="Sitty.Pet nudi siting, šetnju pasa, gruming i profesionalnu negu kućnih ljubimaca. Sajt uskoro otvaramo!">
+
+  <!-- Hreflang -->
   <link rel="alternate" href="/sr/" hreflang="sr">
   <link rel="alternate" href="/ru/" hreflang="ru">
   <link rel="alternate" href="/en/" hreflang="en">
-  <link rel="icon" href="/favicon.png" type="image/png">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Sitty.Pet – Siting, šetnja pasa i nega kućnih ljubimaca u Srbiji">
+  <meta property="og:description" content="Sitty.Pet nudi siting, šetnju pasa, gruming i profesionalnu negu kućnih ljubimaca. Sajt uskoro otvaramo!">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://Sitty.Pet/sr/">
+  <meta property="og:image" content="https://Sitty.Pet/waiting_pet.png">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Sitty.Pet – Siting, šetnja pasa i nega kućnih ljubimaca u Srbiji">
+  <meta name="twitter:description" content="Sitty.Pet nudi siting, šetnju pasa, gruming i profesionalnu negu kućnih ljubimaca. Sajt uskoro otvaramo!">
+  <meta name="twitter:image" content="https://Sitty.Pet/waiting_pet.png">
+
+  <link rel="icon" href="favicon.png" type="image/png">
+
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; font-family:"Segoe UI", sans-serif; }
+    body { 
+      background: linear-gradient(to right, #fefefe, #e0f7fa);
+      display:flex; flex-direction:column; align-items:center; justify-content:center;
+      height:100vh; text-align:center; color:#333; padding:20px;
+    }
+    .logo { font-size:2.5rem; font-weight:bold; color:#2196f3; margin-bottom:1rem; }
+    .flag-selector { display:flex; gap:1rem; margin-bottom:2rem; }
+    .flag-selector img { width:30px; height:20px; cursor:pointer; transition: transform 0.2s; }
+    .flag-selector img:hover { transform: scale(1.2); }
+    .text { max-width:600px; margin-bottom:2rem; }
+    .pet-img { max-width:300px; width:100%; height:auto; }
+  </style>
 </head>
 <body>
-  <h1>Sajt Sitty.Pet je trenutno u izradi</h1>
-  <p>Uskoro se otvaramo i nudimo najbolje usluge za vaše ljubimce!</p>
-  <div>
-    <a href="/sr/">🇷🇸 Srpski</a> |
-    <a href="/ru/">🇷🇺 Русский</a> |
-    <a href="/en/">🇬🇧 English</a>
+  <div class="logo">Sitty.Pet</div>
+  <div class="flag-selector">
+    <img src="https://flagcdn.com/w40/ru.png" alt="Русский" onclick="window.location.href='/ru/'">
+    <img src="https://flagcdn.com/w40/rs.png" alt="Srpski" onclick="window.location.href='/sr/'">
+    <img src="https://flagcdn.com/w40/gb.png" alt="English" onclick="window.location.href='/en/'">
   </div>
+  <div class="text">
+    <p>Sajt Sitty.Pet je trenutno u izradi. Uskoro se otvaramo i nudimo najbolje usluge za vaše ljubimce!</p>
+  </div>
+  <img src="waiting_pet.png" alt="Čekajući ljubimac" class="pet-img">
 </body>
 </html>
