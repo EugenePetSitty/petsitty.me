@@ -1,95 +1,71 @@
 <!DOCTYPE html>
 <html lang="sr">
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-D1S9GXDD05"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-D1S9GXDD05"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-D1S9GXDD05');
+  </script>
 
-  gtag('config', 'G-D1S9GXDD05');
-</script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="PetSitty - Услуги по уходу за домашними животными в Сербии. Сайт находится в разработке.">
-  <meta name="keywords" content="ситтинг, выгул собак, груминг, уход за животными, PetSitty, Србија, Serbia, pet sitting">
-  <meta name="author" content="PetSitty Team">
+
+  <!-- SEO -->
+  <title>Sitty.Pet – ситтинг, выгул собак и уход за питомцами</title>
+  <meta name="description" content="Sitty.Pet предлагает ситтинг, выгул собак, груминг и профессиональный уход за домашними животными в Сербии. Сайт скоро откроется!">
+  <meta name="keywords" content="ситтинг, выгул собак, груминг, уход за животными, Sitty.Pet, Србија, Serbia, pet sitting, dog walking, pet care, grooming, animal care, шетња паса, нега животиња, грижа о кућним љубимцима, груминг паса, house sitting, pet sitting service, professional pet care, pet sitter, услуги ситтингa, професионални ситтер, paw care, dog sitter, cat sitter">
+  <meta name="author" content="Sitty.Pet Team">
+
+  <!-- Open Graph / Social -->
+  <meta property="og:title" content="Sitty.Pet – Профессиональный уход за питомцами в Сербии">
+  <meta property="og:description" content="Ситтинг, выгул собак, груминг и уход за домашними животными. Скоро открытие!">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://Sitty.Pet/">
+  <meta property="og:image" content="https://Sitty.Pet/waiting_pet.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Sitty.Pet – Профессиональный уход за питомцами">
+  <meta name="twitter:description" content="Ситтинг, выгул собак, груминг и уход за домашними животными. Скоро открытие!">
+  <meta name="twitter:image" content="https://Sitty.Pet/waiting_pet.png">
+
+  <!-- Мультиязычность -->
+  <link rel="alternate" href="https://Sitty.Pet/" hreflang="sr">
+  <link rel="alternate" href="https://Sitty.Pet/ru/" hreflang="ru">
+  <link rel="alternate" href="https://Sitty.Pet/en/" hreflang="en">
+
   <link rel="icon" href="favicon.png" type="image/png">
-  <title>PetSitty - В разработке</title>
+
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: "Segoe UI", sans-serif;
-    }
-
-    body {
-      background: linear-gradient(to right, #fefefe, #e0f7fa);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      text-align: center;
-      color: #333;
-      padding: 20px;
-    }
-
-    .logo {
-      font-size: 2.5rem;
-      font-weight: bold;
-      color: #2196f3;
-      margin-bottom: 1rem;
-    }
-
-    .flag-selector {
-      display: flex;
-      gap: 1rem;
-      margin-bottom: 2rem;
-    }
-
-    .flag-selector img {
-      width: 30px;
-      height: 20px;
-      cursor: pointer;
-      transition: transform 0.2s;
-    }
-
-    .flag-selector img:hover {
-      transform: scale(1.2);
-    }
-
-    .text {
-      max-width: 600px;
-      margin-bottom: 2rem;
-    }
-
-    .pet-img {
-      max-width: 300px;
-      width: 100%;
-      height: auto;
-    }
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: "Segoe UI", sans-serif; }
+    body { background: linear-gradient(to right, #fefefe, #e0f7fa); display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; text-align: center; color: #333; padding: 20px; }
+    .logo { font-size: 2.5rem; font-weight: bold; color: #2196f3; margin-bottom: 1rem; }
+    .flag-selector { display: flex; gap: 1rem; margin-bottom: 2rem; }
+    .flag-selector img { width: 30px; height: 20px; cursor: pointer; transition: transform 0.2s; }
+    .flag-selector img:hover { transform: scale(1.2); }
+    .text { max-width: 600px; margin-bottom: 2rem; }
+    .pet-img { max-width: 300px; width: 100%; height: auto; }
   </style>
 </head>
 <body>
-  <div class="logo">PetSitty</div>
+  <div class="logo">Sitty.Pet</div>
   <div class="flag-selector">
     <img src="https://flagcdn.com/w40/ru.png" alt="Русский" onclick="setLang('ru')">
     <img src="https://flagcdn.com/w40/rs.png" alt="Srpski" onclick="setLang('sr')">
     <img src="https://flagcdn.com/w40/gb.png" alt="English" onclick="setLang('en')">
   </div>
   <div class="text" id="message">
-    <p>Сайт PetSitty.me сейчас находится в разработке. Мы скоро откроемся с лучшими возможностями для ухода за вашими питомцами!</p>
+    <p>Сайт Sitty.Pet сейчас находится в разработке. Мы скоро откроемся с лучшими возможностями для ухода за вашими питомцами!</p>
   </div>
   <img src="waiting_pet.png" alt="Ожидающий питомец" class="pet-img">
 
   <script>
     const messages = {
-      ru: "Сайт PetSitty.me сейчас находится в разработке. Мы скоро откроемся с лучшими возможностями для ухода за вашими питомцами!",
-      sr: "Sajt PetSitty.me je trenutno u izradi. Uskoro se otvaramo i nudimo najbolje usluge za vaše ljubimce!",
-      en: "The PetSitty.me website is currently under construction. We’re launching soon with the best pet care services!"
+      ru: "Сайт Sitty.Pet сейчас находится в разработке. Мы скоро откроемся с лучшими возможностями для ухода за вашими питомцами!",
+      sr: "Sajt Sitty.Pet je trenutno u izradi. Uskoro se otvaramo i nudimo najbolje usluge za vaše ljubimce!",
+      en: "The Sitty.Pet website is currently under construction. We’re launching soon with the best pet care services!"
     };
 
     function setLang(lang) {
@@ -98,3 +74,5 @@
   </script>
 </body>
 </html>
+
+
